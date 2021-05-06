@@ -1,0 +1,13 @@
+body {
+    background: url(bg-dark-index.png);
+    background-size: cover;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+.box {
+    background: #FFFFFF;
+    height: 390px;
+    width: 531px;
+    border-radius: 8px;
+    margin: 150px auto;
+}

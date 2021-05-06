@@ -1,5 +1,5 @@
 .background {
-    background: url(bg-dark-index.png);
+    background-image: url(../img/bg-dark-index.png);
     background-size: cover;
 }
 

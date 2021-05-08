@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/bg-dark-index.png');
+    background: url(img/bg-dark-index.png);
     background-size: cover;
     font-family: 'Ubuntu', 'sans-serif';
 }

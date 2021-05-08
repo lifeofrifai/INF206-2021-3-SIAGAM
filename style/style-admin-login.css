@@ -1,6 +1,7 @@
 .background {
-    background: url(bg-dark-index.png);
+    background: url(img/bg-dark-index.png);
     background-size: cover;
+    overflow : hidden;
 }
 
 .background .disini {

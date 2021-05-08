@@ -7,5 +7,5 @@ Anggota :
 -Muhammad Nurifai (1908107010057)
 -Sausan Nabilah (1908107010093)
 -Asdar8107010054)
--Muhammad Nurifai (1908107010057)
--Muhammad Nurifai (1908107010057)
+-Putri Mahela (1908107010007)
+-Rappana Maizelena (1908107010003)

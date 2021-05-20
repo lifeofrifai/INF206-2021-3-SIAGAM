@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Support</title>
+    <title>Halaman Unduh</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style-navbar.css">
+    <link rel="stylesheet" href="css/style-navbar.css">
 
     <style>
         body {
@@ -15,13 +15,11 @@
             font-family: 'Ubuntu', 'sans-serif';
         }
         .kotak {
-            margin : auto;
+            padding: 100px;
             width: 807px;
-            left: 230px;
-            top: 5px;
-            bottom: 50px;
+            height: 400px;
 
-            background: #222734;
+            background: #222734 !important;
             box-shadow: -14px 13px 21px rgba(0, 0, 0, 0.25);
             border-radius: 13px;
             font-family: inter;
@@ -29,11 +27,12 @@
     </style>
 </head>
 <body onload="renderTime();">
+
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">Web Gampong</a>
-    <a href="#">Support</a>
+    <a href="/">Home</a>
+    <a href="https://bandaacehkota.go.id/" target = "_blank">Web Gampong</a>
+    <a href="/support">Support</a>
     
 </div>
 
@@ -47,23 +46,28 @@
     <div id="clockDisplay" class="clock">
 
     </div>
-    
-</div>
-    <div class = "container">
-        <div class = "kotak">
-            <h2  style = "text-align : center; margin-top : 5%; font-weight: bold; font-size: 42px; color:white; font-family: ubuntu; "> Support</h2>
-            <h2  style = "text-align : center; margin-top : 18%; font-size: 36px; color:white; font-family: ubuntu;"> Butuh Bantuan?</h2>
-            <h2  style = "text-align : center; margin-top : 1%; font-size: 24px; color:white; font-family: ubuntu; "> Silahkan Hubungi Admin Melalui WhatsApp dibawah ini</h2>
-            <img src="img/wa.png" alt = " image " height = " 50 " width = " 50 " style="margin-left: 48%; margin-bottom: 20%;" >
-
-        </div>
     </div>
+    
+    <div class = "container">
+    <h2  style = "text-align : center; margin-top : 10%; font-weight: bold; font-size: 42px;"> Selamat Datang di Sistem Antrian Gampong</h2>
+    <h2  style = "text-align : center; margin-top : 1% "> (SIAGAM)</h2>
+</div>
+<div class="container bg-dark kotak">
+        <div class="justify-content-center">
+            <h2 style = "text-align : center; margin-top : 5%; font-weight: bold; font-size: 36px; color:white; font-family: ubuntu;"> Unduh Bukti Pendaftaran Antrian</h2>
+        </div>
+        
+    
+    <div class="d-grid gap-2 d-md-flex justify-content-center pt-5" style="font-weight: bold; font-size: 18px;">
+    <button class="btn btn-primary me-md-2" type="button">Unduh</button>
+</div>
+</div>
 
-     <!-- Option 1: Bootstrap Bundle with Popper -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-     crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
 
- <script src="Js/navbar.js"></script>
+    <script src="Js/navbar.js"></script>
 </body>
 </html>

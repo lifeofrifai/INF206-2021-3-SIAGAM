@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style-navbar.css">
+    <link rel="stylesheet" href="css/style-navbar.css">
 
     <style>
         body {
@@ -20,6 +20,7 @@
             left: 230px;
             top: 5px;
             bottom: 50px;
+            padding-bottom: 30px;
 
             background: #222734;
             box-shadow: -14px 13px 21px rgba(0, 0, 0, 0.25);
@@ -29,11 +30,12 @@
     </style>
 </head>
 <body onload="renderTime();">
+    
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">Web Gampong</a>
-    <a href="#">Support</a>
+    <a href="/">Home</a>
+    <a href="https://bandaacehkota.go.id/" target = "_blank">Web Gampong</a>
+    <a href="/support">Support</a>
     
 </div>
 
@@ -48,9 +50,9 @@
 
     </div>
     
+    
     <div class = "container">
-    <h2  style = "text-align : center; margin-top : 3%; font-weight: bold; font-size: 42px;"> Selamat Datang di Sistem Antrian Gampong</h2>
-    <h2  style = "text-align : center; margin-top : 1% "> (SIAGAM)</h2>
+    <h2  style = " text-align : center ; margin-top : 100px; margin-left: 225px ; font-weight: bold; font-size: 42px;">Selamat Datang di Sistem Antrian Gampong<br>(SIAGAM)</h2>
     <form class ="container pt-3 kotak" method="post" action="" >
         <div class="container">
         <div class="mb-3 mt-5 position-relative" style="margin-left: 10%; margin-top: 10%;">
@@ -74,7 +76,8 @@
             </select>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end py-3" style="margin-right : 8%; font-weight: bold; font-size: 18px;">
-            <button class="btn btn-primary me-md-2" type="button">Lanjut</button>
+            <p style="font-weight: bold; font-size: 18px; margin-top: 5px;">
+                <a href="/biodata-dua"></p><button class="btn btn-primary me-md-2 " type="button ">Lanjut</button></a>
           </div>
         </div>
     </form>

@@ -1,8 +1,8 @@
 # INF206-2021-DY3-SIAGAM
 Project Mata Kuliah RPL 2021
 
-Kemompok     : DY-3
-Judul Projek : SIAGAM
+Kelompok     : DY-3
+Judul Projek : SIAGAM (Sistem Antrian Gampong)
 Anggota : 
 -Muhammad Nurifai (1908107010057)
 -Sausan Nabilah (1908107010093)

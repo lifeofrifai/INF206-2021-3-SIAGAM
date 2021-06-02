@@ -6,8 +6,7 @@ include 'action/koneksi.php';
     $dusun=$_POST['dusun'];
     $keperluan=$_POST['keperluan'];
     $tanggal= date('Y-m-d', strtotime($_POST['tanggal']));
-    $sesi=$_POST['sesi'];
-    $insert = mysqli_query($conn,"INSERT INTO antrian VALUES ('','$nama', '$nik', '$dusun', '$keperluan', '$tanggal', '$sesi' )");
+    $insert = mysqli_query($conn,"INSERT INTO antrian VALUES ('','$nama', '$nik', '$dusun', '$keperluan', '$tanggal' )");
 
     header('Location: result-antrian.php');
     
@@ -18,12 +17,14 @@ include 'action/koneksi.php';
 <html>
 <head>
     <title>Halaman sesi</title>
+    <link rel="icon" type="image/png" href="img/icons/icon-siagam.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style-navbar.css">
     <link rel="stylesheet" href="css/style-input-biodata.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="Js/navbar.js"></script>
 
 
@@ -48,7 +49,7 @@ include 'action/koneksi.php';
         }
     </style>
 </head>
-<body onload="renderTime();">
+<body >
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -65,14 +66,14 @@ include 'action/koneksi.php';
                 d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
         </svg></span>
     </div>
-    <div id="clockDisplay" class="clock">
+    <div id="jamSiagam" class="clock">
 
     </div>
 </div>
 
     <div class = "container">
     <h2  style = "text-align : center; margin-top : 7%; font-weight: bold; font-size: 42px;"> Selamat Datang di Sistem Antrian Gampong</h2>
-    <h2  style = "text-align : center; margin-top : 1% "> (SIAGAM)</h2>
+    <h2  style = "text-align : center; margin-top : 1% font-size:32px;"> (SIAGAM)</h2>
     <form class ="container pt-3 kotak" method="post" action="" >
         <div class="container">
         <div class="mb-3 mt-5 position-relative" style="margin-left: 10%; margin-top: 10%;">
@@ -113,16 +114,6 @@ include 'action/koneksi.php';
             <input type="date" name="tanggal" id="tanggal" class="kalender">
             </br>
         </div>
-        <div class="mb-3 position-relative" style="margin-left: 10%">
-            <label for="sesi" class="form-label" style="color: white; font-weight: 500; font-size: 18px;">Pilih Sesi Kedatangan Anda</label>
-            <select name = "sesi" id="sesi" class="form-select" style = "width:90%; height:40px;">
-                <option>Pilih sesi...</option>
-                <option>Sesi 1 (08.00-10.00)</option>
-                <option>Sesi 2 (10.00-12.00)</option>
-                <option>Sesi 3 (13.00-15.00)</option>
-                <option>Sesi 4 (15.00-17.00)</option>
-        </select>
-        </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end py-3" style="margin-right : 8%; font-weight: bold; font-size: 18px;">
                 <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="padding-left : 18px; padding-right:18px;">Lanjut</button>
                                 <!-- Modal -->
@@ -151,8 +142,15 @@ include 'action/koneksi.php';
     <br><br><br><br>
 
 
+    <div class="footer" style="margin-bottom: -10%;">
+        <p>Made With <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+    </svg> by DY3 RPL 2021</p>
+    </div>
+    
+   
+   
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

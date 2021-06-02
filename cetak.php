@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Data Antrian </title>
+	<link rel="icon" type="image/png" href="img/icons/icon-siagam.png">
+    <title>Bukti Antrian</title>
+	<link rel="icon" type="image/png" href="img/icons/icon-siagam.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,15 +42,19 @@
 		$data = mysqli_fetch_array($sql);
 		?>
 		<tr>
-        <div class="data" style="text-align: justify; font-size: 36px">
-			<td>Nomor antrian <?php echo $data['id']; ?></td> <br>
-			<td>Nama     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;     : <?php echo $data['nama']; ?></td> <br>
-			<td>NIK      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     : <?php echo $data['nik']; ?></td> <br>
-			<td>Dusun    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   : <?php echo $data['dusun']; ?></td> <br>
-            <td>Keperluan &nbsp; &nbsp; &nbsp;  : <?php echo $data['keperluan']; ?></td> <br>
-            <td>Tanggal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <?php echo $data['tanggal']; ?></td> <br>
-			<td>Sesi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  : <?php echo $data['sesi']; ?></td> <br>
+		<pre>
+        <div class="data" style="text-align: justify; font-size: 32px; margin-top:10px">
+<td>Nomor antrian <?php echo $data['id']; ?></td> 
+<td>Nama 		: <?php echo $data['nama']; ?></td> 
+<td>NIK     	: <?php echo $data['nik']; ?></td> 
+<td>Dusun   	: <?php echo $data['dusun']; ?></td> 
+<td>Keperluan 	: <?php echo $data['keperluan']; ?></td> 
+<td>Tanggal 	: <?php echo $data['tanggal']; ?></td> 
+<br>
+<td>NOTE : </td>
+<td>Silahkan Menuju Kantor<br>1 Jam Setelah Mengambil Nomor Antrian</td>
         </div>
+		</pre>
 		</tr>
 
  

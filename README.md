@@ -8,8 +8,8 @@
     </h2>
     <h4>
     Project Mata Kuliah RPL 2021 <br>
-    Kelompok : DY-3 Judul <br>
-    Projek : SIAGAM (Sistem Antrian Gampong) <br>
+    Kelompok : DY-3 <br>
+    Judul Projek : SIAGAM (Sistem Antrian Gampong) <br>
     Anggota : <br>
     -Muhammad Nurifai (1908107010057) <br>
     -Sausan Nabilah (1908107010093) <br>

@@ -10,11 +10,13 @@ include 'action/koneksi.php';
 
 <head>
     <title>Halaman Antrian</title>
+    <link rel="icon" type="image/png" href="img/icons/icon-siagam.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style-navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <style>
         body {
@@ -36,7 +38,7 @@ include 'action/koneksi.php';
     </style>
 </head>
 
-<body onload="renderTime();">
+<body >
     <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">Home</a>
@@ -52,7 +54,7 @@ include 'action/koneksi.php';
                 d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
         </svg></span>
     </div>
-    <div id="clockDisplay" class="clock">
+    <div id="jamSiagam" class="clock">
 
     </div>
 
@@ -73,9 +75,9 @@ include 'action/koneksi.php';
         <div class="justify-content-center ">
             <h2 style="text-align : center; margin-top : 2%; font-weight: bold; font-size: 20px; color:white; font-family: ubuntu; ">Tanggal : <?php echo $hasil ['tanggal'] ?></h2>
         </div>
-
+        <br>
         <div class="justify-content-center ">
-            <h2 style="text-align : center; margin-top : 1%; font-weight: bold; font-size: 16px; color:white; font-family: ubuntu; ">Silahkan Menuju Kantor<br>Pada <?php echo $hasil ['sesi'] ?> </h2>
+            <h2 style="text-align : center; margin-top : 1%; font-weight: bold; font-size: 20px; color:white; font-family: ubuntu; ">Silahkan Menuju Kantor<br> 1 Jam Setelah Mengambil Nomor Antrian </h2>
         </div>
 
         <div class="d-grid gap-2 d-md-block " style="margin-top: 10%; ">
@@ -88,8 +90,15 @@ include 'action/koneksi.php';
                 <a href="cetak.php" target="_blank"></p><button class=" btn btn-primary " type="button ">Cetak</button></a>
         </div>
 
+        <div class="footer" style="margin-bottom: -10%; font-family: 'Ubuntu', 'sans-serif';">
+        <p>Made With <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+    </svg> by DY3 RPL 2021</p>
+    </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8 " crossorigin="anonymous "></script>
         <script src="Js/navbar.js "></script>
+
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+body {
+    background: url(../img/bg-dark-index.png);
+    background-size: cover;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+.box {
+    background: #FFFFFF;
+    height: 400px;
+    width: 550px;
+    border-radius: 8px;
+    margin: 0px auto; 
+
+}

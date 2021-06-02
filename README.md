@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>INF206-2021-DY3-SIAGAM</title>
 </head>
 <body>
     <h2>
